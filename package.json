@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/esbuild src/index.jsx --bundle --outfile=dist/out.js"
   },
   "keywords": [],
   "author": "酒窝 <694518723@qq.com> (https://github.com/Dannyzn)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.17.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
